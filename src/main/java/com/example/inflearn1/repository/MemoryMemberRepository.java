@@ -1,9 +1,11 @@
 package com.example.inflearn1.repository;
 
 import com.example.inflearn1.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository
 public class MemoryMemberRepository implements MemberRepository{
 
     // 동시성 문제가 있을 수 있으므로 공유되는 변수일 경우 ConcurrentHashMap을 써야 함

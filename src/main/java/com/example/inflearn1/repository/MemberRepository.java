@@ -1,6 +1,7 @@
 package com.example.inflearn1.repository;
 
 import com.example.inflearn1.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
