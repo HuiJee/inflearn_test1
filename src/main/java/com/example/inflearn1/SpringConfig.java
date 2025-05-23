@@ -2,6 +2,7 @@ package com.example.inflearn1;
 
 import com.example.inflearn1.controller.MemberController;
 import com.example.inflearn1.repository.JdbcMemberRepository;
+import com.example.inflearn1.repository.JdbcTemplateMemberRepository;
 import com.example.inflearn1.repository.MemberRepository;
 import com.example.inflearn1.repository.MemoryMemberRepository;
 import com.example.inflearn1.service.MemberService;
@@ -38,7 +39,8 @@ public class SpringConfig {
     @Bean
     public MemberRepository memberRepository() {
 //        return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource);
+//        return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 
     @Bean
